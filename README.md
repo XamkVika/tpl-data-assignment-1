@@ -2,7 +2,7 @@
 
 ## Objective
 
-This project demonstrates a modular Python data pipeline that handles API data ingestion, database storage, pseudonymization/anonymization, and data exploration.
+This project demonstrates a modular Python data pipeline that handles API data ingestion, database storage, data masking, and data exploration.
 
 - Use **SQLite** with **SQLAlchemy** and **Alembic** for migrations.
 - Fetch and store structured data from a public API.
