@@ -22,8 +22,10 @@ The files and modules you need to include:
 ```
 database                # A database module to create a database
 api                     # An API module to fetch data from API and save to DB
-data protection         # A simple data aprotection module
+data protection         # A simple data protection module
+data analysis           # A simple data analysis module
 main.py                 # Main script that uses modules mentioned above
+configuration.py        # Config file to use for different variables
 requirements.txt        # Dependencies list
 ```
 
@@ -32,6 +34,7 @@ requirements.txt        # Dependencies list
 
 1. Create and activate a virtual environment.
 2. Initialize Alembic for database migrations.
+3. Create configuration file, use it to serve important values for the scripts.
 
 
 ## Part 1 – Database Design and Migration
@@ -51,7 +54,12 @@ requirements.txt        # Dependencies list
 Create function(s) to mask the phone numbers, leave only two last digits visible.
 
 
-## Part 4 – Orchestration Script
+## Part 4 - Pandas data analysis
+
+Create function(s) for simple data analysis.
+
+
+## Part 5 – Orchestration Script
 
 Your `main.py` should run the full pipeline step-by-step.
 
