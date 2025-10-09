@@ -6,13 +6,14 @@ This project demonstrates a modular Python data pipeline that handles API data i
 
 - Use **SQLite** with **SQLAlchemy** and **Alembic** for migrations.
 - Fetch and store structured data from a public API.
-- Apply **data masking** techniques.
+- Apply **data protection** techniques.
 - Explore and summarize data with **Pandas**.
 - Organize code into **modular packages and modules**.
 - Manage dependencies with a **virtual environment**.
 
 The data source for this project is the **JSONPlaceholder Users API**:  
 [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
+
 
 ### Project Structure
 
@@ -51,17 +52,19 @@ requirements.txt        # Dependencies list
 
 ## Part 3 – Data masking
 
-Create function(s) to mask the phone numbers, leave only two last digits visible.
+- Create function(s) to mask the phone numbers, leave only two last digits visible.
+- Anonymize names, leave only first digit of First name.
 
 
 ## Part 4 - Pandas data analysis
 
-Create function(s) for simple data analysis.
+- Create function(s) for simple data analysis.
+- Print shape, first two and last two records.
 
 
 ## Part 5 – Orchestration Script
 
-Your `main.py` should run the full pipeline step-by-step.
+- `main.py` should run the full pipeline step-by-step.
 
 
 ## Deliverables
@@ -70,10 +73,3 @@ Your `main.py` should run the full pipeline step-by-step.
 - db file included
 
 
-
-## Optional Enhancements
-
-- Add logging (INFO/WARNING/ERROR)
-- Use environment variables for database path
-- Add unit tests for pseudonymization functions
-- Create data visualizations (e.g., users by city)
